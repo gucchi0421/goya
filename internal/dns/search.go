@@ -81,6 +81,7 @@ func Search(domain string) {
 
 	// エラーチェック
 	if len(errors) > 0 {
+		fmt.Println()
 		for _, err := range errors {
 			fmt.Println("❌", err)
 		}

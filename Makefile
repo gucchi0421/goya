@@ -1,6 +1,6 @@
 .PHONY: i
 i:
-	@go get -u github.com/spf13/cobra@latest
+	@go get -u ./...
 	@go install github.com/spf13/cobra-cli@latest
 
 

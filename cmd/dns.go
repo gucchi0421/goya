@@ -12,6 +12,7 @@ import (
 var dnsCmd = &cobra.Command{
 	Use:   "dns [domain]",
 	Short: "ドメインからDNSレコードを取得",
+	Args:  cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
 		domain := args[0]
 		dns.Search(domain)
